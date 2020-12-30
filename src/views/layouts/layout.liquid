@@ -1,0 +1,14 @@
+<header>Header
+    ---
+    {{ AppState.defaultLanguageCode }}
+    ---
+    {{ businessCategoryTree.length }}
+    {% for cat in businessCategoryTree %}
+        <a href="{{ 'demo' | url : uuid: cat.uuid, slug: cat.slug }}">{{ cat.name | defaultLang }}</a>
+    {% endfor %}
+</header>
+
+<div class="container">
+    {% block content %}My default content{% endblock %}
+</div>
+<footer>Footer</footer>
