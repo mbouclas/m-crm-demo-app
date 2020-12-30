@@ -1,6 +1,6 @@
 {
   "name": "mcms-node-next-front-end",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "ts-node build.ts",
     "lint": "eslint . --ext .ts",
